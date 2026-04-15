@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mis Películas Favoritas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<title>Mis Películas Favoritas</title>
+
 <style>
     body {
-    font-family: Arial;
-    background-color: #111;
-    color: white;
-    text-align: center;
-}
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
 
-h1 {
-    color: #ffcc00;
-}
+    h1 {
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
 
-.pelicula {
-    background-color: #222;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
+    p {
+        color: #ddd;
+    }
 
-img {
-    border-radius: 10px;
-}
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
 
-a {
-    color: #00ccff;
-    text-decoration: none;
-    font-size: 18px;
-}
+    .pelicula {
+        background: #1c1c1c;
+        padding: 20px;
+        border-radius: 12px;
+        width: 250px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .pelicula:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+    }
+
+    .pelicula h2 {
+        color: #00ccff;
+        margin-bottom: 10px;
+    }
+
+    .pelicula p {
+        font-size: 14px;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #ffcc00;
+        color: black;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background: #e6b800;
+    }
 </style>
+
+</head>
 <body>
 
-    <h1>🎬 Mis Películas Favoritas</h1>
+<h1>🎬 Mis Películas Favoritas</h1>
 
-    <p>Estas son algunas de las películas que más me gustan. Cada una tiene una historia increíble y personajes inolvidables.</p>
+<p>Estas son algunas de las películas que más me gustan. Cada una tiene una historia increíble y personajes inolvidables.</p>
+
+<div class="contenedor">
 
     <div class="pelicula">
         <h2>Avengers: Endgame</h2>
-        <img src="https://via.placeholder.com/300" alt="Avengers">
-        <p>Una épica batalla final de los superhéroes de Marvel para salvar el universo.</p>
+        <p>Una épica batalla final de los superhéroes para salvar el universo.</p>
     </div>
 
     <div class="pelicula">
         <h2>Rápidos y Furiosos</h2>
-        <img src="https://via.placeholder.com/300" alt="Rapidos y Furiosos">
         <p>Acción, autos y velocidad en una saga llena de adrenalina.</p>
     </div>
 
     <div class="pelicula">
         <h2>Spider-Man</h2>
-        <img src="https://via.placeholder.com/300" alt="Spiderman">
-        <p>La historia de un joven con poderes arácnidos que protege la ciudad.</p>
+        <p>Un joven con poderes arácnidos que protege la ciudad.</p>
     </div>
 
-    <br>
+</div>
 
-    <a href="#">Ver más películas</a>
+<a href="#">Ver más películas</a>
 
 </body>
 </html>
