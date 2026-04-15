@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Mis Películas Favoritas</title>
+<title>Películas Marvel</title>
 
 <style>
     body {
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        background: linear-gradient(135deg, #000000, #1a0000, #330000);
         color: white;
         text-align: center;
         margin: 0;
@@ -15,12 +15,13 @@
     }
 
     h1 {
-        color: #ffcc00;
+        color: #e62429;
         margin-bottom: 10px;
+        text-shadow: 2px 2px 10px black;
     }
 
     p {
-        color: #ddd;
+        color: #ccc;
     }
 
     .contenedor {
@@ -32,21 +33,22 @@
     }
 
     .pelicula {
-        background: #1c1c1c;
+        background: #111;
         padding: 20px;
         border-radius: 12px;
         width: 250px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        border: 2px solid #e62429;
+        box-shadow: 0 0 15px rgba(230,36,41,0.5);
         transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .pelicula:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(230,36,41,0.9);
     }
 
     .pelicula h2 {
-        color: #00ccff;
+        color: #e62429;
         margin-bottom: 10px;
     }
 
@@ -57,9 +59,9 @@
     a {
         display: inline-block;
         margin-top: 30px;
-        padding: 10px 20px;
-        background: #ffcc00;
-        color: black;
+        padding: 12px 25px;
+        background: #e62429;
+        color: white;
         border-radius: 6px;
         text-decoration: none;
         font-weight: bold;
@@ -67,32 +69,33 @@
     }
 
     a:hover {
-        background: #e6b800;
+        background: #b71c1c;
+        box-shadow: 0 0 10px #e62429;
     }
 </style>
 
 </head>
 <body>
 
-<h1>🎬 Mis Películas Favoritas</h1>
+<h1>🦸‍♂️ Películas Estilo Marvel</h1>
 
-<p>Estas son algunas de las películas que más me gustan. Cada una tiene una historia increíble y personajes inolvidables.</p>
+<p>Las mejores películas con acción, héroes y batallas épicas al estilo Marvel.</p>
 
 <div class="contenedor">
 
     <div class="pelicula">
         <h2>Avengers: Endgame</h2>
-        <p>Una épica batalla final de los superhéroes para salvar el universo.</p>
+        <p>La batalla final donde todos los héroes se unen para salvar el universo.</p>
     </div>
 
     <div class="pelicula">
-        <h2>Rápidos y Furiosos</h2>
-        <p>Acción, autos y velocidad en una saga llena de adrenalina.</p>
+        <h2>Iron Man</h2>
+        <p>El inicio del universo Marvel con Tony Stark y su icónica armadura.</p>
     </div>
 
     <div class="pelicula">
         <h2>Spider-Man</h2>
-        <p>Un joven con poderes arácnidos que protege la ciudad.</p>
+        <p>Un joven héroe que lucha contra el crimen mientras equilibra su vida.</p>
     </div>
 
 </div>
